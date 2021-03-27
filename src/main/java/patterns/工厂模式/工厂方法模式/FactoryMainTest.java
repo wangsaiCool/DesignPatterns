@@ -1,6 +1,5 @@
 package patterns.工厂模式.工厂方法模式;
 
-
 import utils.XMLUtil;
 
 /**
@@ -8,7 +7,7 @@ import utils.XMLUtil;
  */
 public class FactoryMainTest {
     public static void main(String[] args) {
-        String loggerFactory = "loggerFactory";
+        String loggerFactory = "methodFactory";
         LoggerFactory factory = (LoggerFactory) XMLUtil.getBean(loggerFactory);
         if (null == factory) {
             return;
@@ -16,7 +15,5 @@ public class FactoryMainTest {
 
         Logger logger = factory.createLogger();
         logger.writeLog("it is a test");
-
-
     }
 }

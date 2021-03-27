@@ -12,20 +12,15 @@ import javax.xml.parsers.DocumentBuilderFactory;
 public class XMLUtil {
     private static final String CONFIG_PATH = "src/main/resources/factory.xml";
 
-    public static Object getBean(String className) {
+    public static Object getBean(String className) throws Exception {
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-        try {
-            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-            Document document = documentBuilder.parse(CONFIG_PATH);
-            NodeList elements = document.getElementsByTagName(className);
-            String cName = elements.item(0).getFirstChild().getNodeValue();
+        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+        Document document = documentBuilder.parse(CONFIG_PATH);
+        NodeList elements = document.getElementsByTagName(className);
+        String cName = elements.item(0).getFirstChild().getNodeValue();
 
-            // 反射
-            return  Class.forName(cName).newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+        // 反射
+        return Class.forName(cName).newInstance();
     }
 
 }
