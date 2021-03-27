@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<config>
-    <methodFactory>patterns.工厂模式.工厂方法模式.FileLoggerFactory</methodFactory>
-    <abstractFactory>patterns.工厂模式.抽象工厂模式.PCFactoryGreen</abstractFactory>
-</config>
