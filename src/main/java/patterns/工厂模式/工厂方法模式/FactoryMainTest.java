@@ -1,6 +1,7 @@
-package art.of.design.patterns.工厂模式.工厂方法模式;
+package patterns.工厂模式.工厂方法模式;
 
-import myUtils.XMLUtil;
+
+import utils.XMLUtil;
 
 /**
  * Created by WangSai on 2021/3/26
