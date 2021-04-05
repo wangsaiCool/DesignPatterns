@@ -2,4 +2,5 @@
 <config>
     <methodFactory>patterns.工厂模式.工厂方法模式.FileLoggerFactory</methodFactory>
     <abstractFactory>patterns.工厂模式.抽象工厂模式.PCFactoryGreen</abstractFactory>
+    <templateMethodPattern>patterns.模板方法模式.CurrentAccount</templateMethodPattern>
 </config>

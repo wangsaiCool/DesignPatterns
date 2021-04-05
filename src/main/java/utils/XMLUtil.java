@@ -10,7 +10,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
  * Created by WangSai on 2021/3/27
  */
 public class XMLUtil {
-    private static final String CONFIG_PATH = "src/main/resources/factory.xml";
+    private static final String CONFIG_PATH = "src/main/resources/pattern_design.xml";
 
     public static Object getBean(String className) throws Exception {
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
